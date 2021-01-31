@@ -1,3 +1,7 @@
+# Introduction
+This repository contains implementations of various essential techniques in causal inference that are used in Data Science. This project was carried out 
+as a part of the *Coursera Project Network* and verified certificate for the same may be viewed [here](https://coursera.org/share/f7e3c3f479fe4643780ef4a3ddc3439c).
+
 # **Background**
 Data Science Questions often fall into a standard format:
 - Some outcome metric of interest Y
@@ -123,3 +127,7 @@ To use trees or forests to identify partition of the space that maximizes observ
 5. Forest is just average of a bunch of trees with sampling.
 
 Useful in companies to understand how different demographics would result in different causal impacts in response to a particular intervention. 
+
+# Codebase 
+Experiments were carried out in R on the R-Studio platform and code, along with console outputs, have been added to...to aid reproducibility. 
+
