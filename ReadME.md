@@ -1,3 +1,4 @@
+![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/controlled-reg.png "Plots for Controlled Regression")
 # Introduction
 This repository contains implementations of various essential techniques in causal inference that are used in Data Science. This project was carried out 
 as a part of the *Coursera Project Network* and verified certificate for the same may be viewed [here](https://coursera.org/share/f7e3c3f479fe4643780ef4a3ddc3439c).
