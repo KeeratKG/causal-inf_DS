@@ -36,7 +36,6 @@ dat %>%
   theme_economist() +
   scale_color_economist()
 ```
-![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/dind.png)
 
 ```{r warning=F}
 # fit difference in difference model

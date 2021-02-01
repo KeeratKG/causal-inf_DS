@@ -63,7 +63,6 @@ grid.arrange(g2,g3,g4,g5,nrow=2)
 # observe differences across time & products & customer age
 # need to include in regression to control for their effects
 ```
-![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/controlled-reg.png "Plots for Controlled Regression")
 
 ```{r warning=F}
 # compare controlled reg/fixed effect models

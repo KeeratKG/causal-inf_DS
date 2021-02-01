@@ -37,7 +37,6 @@ dat %>%
   scale_color_economist() +
   theme(legend.position="none")
 ```
-![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/reg-disc.png)
 
 ```{r warning=F}
 # fit regression discontinuity model

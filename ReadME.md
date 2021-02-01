@@ -1,5 +1,5 @@
 # Introduction
-This repository contains implementations of various essential techniques in causal inference that are used in Data Science. This project was carried out 
+This repository contains implementations of various essential techniques in causal inference that are used in Data Science. This project was carried out
 as a part of the *Coursera Project Network* and verified certificate for the same may be viewed [here](https://coursera.org/share/f7e3c3f479fe4643780ef4a3ddc3439c).
 
 # **Background**
@@ -21,7 +21,7 @@ To use causal inference techniques to estimate coefficient of interest/ causal i
 * ML+Causal Inference
 
 # **Method**
-### 1. Controlled Regression: 
+### 1. Controlled Regression:
 We consider X as the satisfaction rating(1-10) signifying a product's quality and Y as the Usage of the product(till a certain time period).
 
 *Steps*:
@@ -31,7 +31,11 @@ We consider X as the satisfaction rating(1-10) signifying a product's quality an
 *If*:
 1. R squared in second Regression is close to 100% (meaning entire variance of the data has been captured in this regression)
 2. coefficient of interest on X is similar in the two models
-then by theory of controlled regression, we can use it as the causal impact. 
+then by theory of controlled regression, we can use it as the causal impact.
+
+Plot obtained:
+![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/controlled-reg.png "Plots for Controlled Regression")
+
 
 *Sources of error*:
 1. Omitted Variable Bias: Omitting control variables that matter from the model. Can be detected if R squared is not close to 100% in the regression with controls.
@@ -56,7 +60,10 @@ Therefore we run a regression discontinuity with a cutoff point of 80% where:
 * Sample similar above+below cutoff(in terms of other vatiables like samples size/observables/confounding factors, etc)
 * No confounding discontinuities(check by running placebo tests- run regression discontinuity at points other than the cutoff and check for no effect)
 
-### 3. Difference in Difference: 
+Plot obtained:
+![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/reg-disc.png)
+
+### 3. Difference in Difference:
 Suppose we want to measure the effect of lowering price on revenue:
 - We cannot run an AB test because customers may complain if only some get lower prices and hear about it.
 - We can run a quasi experiment: change price in select geographies but not others and use control markets to compute the counterfactual(what would have happened absent price change in the treatment markets).
@@ -71,7 +78,11 @@ Thus we run a Difference in Difference design with control and treatment markets
 
 *Extension*: Synthetic Control(creates a synthetic control group that is a weighted average of many control groups).
 
-### 4. Instrumental Variable: 
+Plot obtained:
+![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/dind.png)
+
+
+### 4. Instrumental Variable:
 Suppose we want to measure the effect of using the mobile app on course completion.
 - We can't run AB test because difficult to randomly give some learners access to the mobile app.
 - We cannot do controlled regression because key unobservables like learner motivation lead to omitted variable bias.
@@ -126,8 +137,10 @@ To use trees or forests to identify partition of the space that maximizes observ
 4. Optimisation criteria set up to find best fit given the data splitting.
 5. Forest is just average of a bunch of trees with sampling.
 
-Useful in companies to understand how different demographics would result in different causal impacts in response to a particular intervention. 
+Useful in companies to understand how different demographics would result in different causal impacts in response to a particular intervention.
 
-# Codebase 
-Experiments were carried out in R on the R-Studio platform and code, along with console outputs, and have been added to aid reproducibility. 
+Plot obtained:
+![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/causaML.png)
 
+# Codebase
+Experiments were carried out in R on the R-Studio platform and code, along with console outputs, and have been added to aid reproducibility.

@@ -155,6 +155,3 @@ data.frame("est"=pred,"Registration.Source"=dat$Registration.Source) %>%
 +   theme_economist() +
 +   scale_fill_economist() +
 +   theme(legend.position="none") -->
-
-![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/causaML.png)
-/home/keerat/github/causal-inf_DS/media/causaML.png
