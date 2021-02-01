@@ -13,7 +13,7 @@ editor_options:
 
 ## Load Necessary Packages & Helper Functions
 
-```{r}
+```{r setup, include=TRUE}
 setwd("C:/Users/Administrator/Documents/Causal Inference Project Materials/4 - Helper Functions R Script/")
 source('rhyme_project_causal_inference_helper_function.R')
 print("Setup Complete")
