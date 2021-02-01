@@ -108,7 +108,7 @@ stargazer(model1,model2,model3,model4,model5,type="text",
 ```
 ### Console Output
 
-=======================================================================
+<!-- =======================================================================
                             Controlled / Fixed Effects Regression
                          Y~X     Y~X+C    Y~X+FE  Y~X+C+FE+IVB Y~X+C+FE
                          (1)      (2)     (3)        (4)        (5)
@@ -126,4 +126,4 @@ Notes:                 ***Significant at the 1 percent level.
                        *Significant at the 10 percent level.
                        True Coef on X = 2
 
-------------------------------------------------------------------------
+------------------------------------------------------------------------ -->
