@@ -34,7 +34,8 @@ We consider X as the satisfaction rating(1-10) signifying a product's quality an
 then by theory of controlled regression, we can use it as the causal impact.
 
 Plot obtained:
-![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/controlled-reg.png "Plots for Controlled Regression")
+
+![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/controlled-reg.png "Plot for Controlled Regression")
 
 
 *Sources of error*:
@@ -61,7 +62,8 @@ Therefore we run a regression discontinuity with a cutoff point of 80% where:
 * No confounding discontinuities(check by running placebo tests- run regression discontinuity at points other than the cutoff and check for no effect)
 
 Plot obtained:
-![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/reg-disc.png)
+
+![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/reg-disc.png "Plot for Regression Discontinuity")
 
 ### 3. Difference in Difference:
 Suppose we want to measure the effect of lowering price on revenue:
@@ -79,7 +81,8 @@ Thus we run a Difference in Difference design with control and treatment markets
 *Extension*: Synthetic Control(creates a synthetic control group that is a weighted average of many control groups).
 
 Plot obtained:
-![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/dind.png)
+
+![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/dind.png "Plot for Difference in Difference")
 
 
 ### 4. Instrumental Variable:
@@ -140,7 +143,8 @@ To use trees or forests to identify partition of the space that maximizes observ
 Useful in companies to understand how different demographics would result in different causal impacts in response to a particular intervention.
 
 Plot obtained:
-![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/causaML.png)
+
+![alt text](https://github.com/KeeratKG/causal-inf_DS/blob/main/media/causaML.png "Plot for Causal Forests")
 
 # Codebase
 Experiments were carried out in R on the R-Studio platform and code, along with console outputs, and have been added to aid reproducibility.
