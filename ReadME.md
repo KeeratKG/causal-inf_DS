@@ -129,5 +129,5 @@ To use trees or forests to identify partition of the space that maximizes observ
 Useful in companies to understand how different demographics would result in different causal impacts in response to a particular intervention. 
 
 # Codebase 
-Experiments were carried out in R on the R-Studio platform and code, along with console outputs, have been added to...to aid reproducibility. 
+Experiments were carried out in R on the R-Studio platform and code, along with console outputs, and have been added to aid reproducibility. 
 
